@@ -3,13 +3,12 @@
 use Jenssegers\Date\Date as DateCore;
 use Orchestra\Testbench\TestCase;
 use Propaganistas\LaravelIntl\Facades\Date;
-use Propaganistas\LaravelIntl\IntlServiceProvider;
 
 class TestDate extends TestCase
 {
     public function getPackageProviders($app)
     {
-        return [IntlServiceProvider::class];
+        return ['Propaganistas\LaravelIntl\IntlServiceProvider'];
     }
 
     public function setUp()
