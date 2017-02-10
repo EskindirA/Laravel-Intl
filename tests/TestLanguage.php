@@ -2,13 +2,12 @@
 
 use Orchestra\Testbench\TestCase;
 use Propaganistas\LaravelIntl\Facades\Language;
-use Propaganistas\LaravelIntl\IntlServiceProvider;
 
 class TestLanguage extends TestCase
 {
     public function getPackageProviders($app)
     {
-        return [IntlServiceProvider::class];
+        return ['Propaganistas\LaravelIntl\IntlServiceProvider'];
     }
 
     public function setUp()
