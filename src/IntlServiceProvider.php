@@ -1,5 +1,9 @@
 <?php namespace Propaganistas\LaravelIntl;
 
+use CommerceGuys\Intl\Country\CountryRepository;
+use CommerceGuys\Intl\Currency\CurrencyRepository;
+use CommerceGuys\Intl\Language\LanguageRepository;
+use CommerceGuys\Intl\NumberFormat\NumberFormatRepository;
 use Illuminate\Support\ServiceProvider;
 
 class IntlServiceProvider extends ServiceProvider
