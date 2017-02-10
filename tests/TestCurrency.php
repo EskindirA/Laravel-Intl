@@ -2,13 +2,12 @@
 
 use Orchestra\Testbench\TestCase;
 use Propaganistas\LaravelIntl\Facades\Currency;
-use Propaganistas\LaravelIntl\IntlServiceProvider;
 
 class TestCurrency extends TestCase
 {
     public function getPackageProviders($app)
     {
-        return [IntlServiceProvider::class];
+        return ['Propaganistas\LaravelIntl\IntlServiceProvider'];
     }
 
     public function setUp()
