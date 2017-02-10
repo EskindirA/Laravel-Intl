@@ -2,13 +2,12 @@
 
 use Orchestra\Testbench\TestCase;
 use Propaganistas\LaravelIntl\Facades\Number;
-use Propaganistas\LaravelIntl\IntlServiceProvider;
 
 class TestNumber extends TestCase
 {
     public function getPackageProviders($app)
     {
-        return [IntlServiceProvider::class];
+        return ['Propaganistas\LaravelIntl\IntlServiceProvider'];
     }
 
     public function setUp()
